@@ -1,0 +1,240 @@
+/* ==UserStyle==
+
+@name           Dark Mode for RedFlagDeals Forums
+@namespace      https://forums.redflagdeals.com/
+@description    Make RFD Forums easier to see
+@homepageURL    https://github.com/ytqxyd/rfd-themes
+@preprocessor   stylus
+@version        0.1.3
+@author         ytqxyd
+@license        GPL-3.0
+
+==/UserStyle== */
+@-moz-document domain("forums.redflagdeals.com") {
+  /* TEMPORARY EVENTS */
+  /* RED COLORS OVERRIDE */
+  .forum_group_header,
+  .forums_nav_search a,
+  .new_post_button a,
+  .thread_posts .post_dateline {
+    background-color: #810;
+  }
+  /* GLOBAL */
+  *:not(.site_avatar) {
+    background-image: none !important;
+    border-color: #4d4d4d !important;
+    color: #757575;
+  }
+  html,
+  body {
+    color-scheme: dark;
+    background-color: #222;
+    color: #757575;
+  }
+  .rfd_forums,
+  #site_container {
+    background-color: #222;
+    color: #757575;
+  }
+  nav {
+    background-color: #222;
+    color: #757575;
+  }
+  nav li {
+    border-color: #4d4d4d;
+  }
+  input {
+    background-color: #222 !important;
+    color: #757575 !important;
+  }
+  a,
+  a * {
+    color: #6e94aa !important;
+  }
+  a:hover,
+  a:hover * {
+    color: #039BE5 !important;
+  }
+  select {
+    background-color: #222 !important;
+  }
+  .thread_image,
+  .author_avatar,
+  .list_item_image {
+    filter: brightness(69%);
+  }
+  use {
+    fill: #757575 !important;
+  }
+  .dropdown,
+  .dropdown_item,
+  .categories_selector,
+  .site_pagination_forums div,
+  .site_pagination_forums a {
+    background-color: #222 !important;
+    color: #757575;
+  }
+  .site_pagination_forums .pagination_page_current {
+    background-color: #626262 !important;
+  }
+  .dropdown-content,
+  .filter-search-wrapper {
+    background-color: #222 !important;
+    color: #757575;
+  }
+  .dropdown-content li,
+  .filter-search-wrapper li {
+    background-color: #222;
+    color: #757575;
+    border-color: #4d4d4d;
+  }
+  .forum_tools_container {
+    background-color: #222 !important;
+    color: #757575;
+  }
+  .forum_tools_container .forum_tools {
+    background-color: #222;
+  }
+  .search_field {
+    background-color: #222;
+  }
+  /* SIDE */
+  .list_item {
+    background-color: #222;
+  }
+  .section_sidebar {
+    background-color: #333 !important;
+  }
+  /* HEADER */
+  #site_extra_menubar {
+    background-color: #222;
+  }
+  #site_header,
+  #site_headerbar,
+  .submenu_section {
+    background-color: #222;
+  }
+  .site_userbox_dropdown * {
+    background-color: #323232;
+  }
+  .filter_dropdown button,
+  .filter_dropdown_content {
+    background-color: #222;
+  }
+  .change_view_dropdown button,
+  .change_view_dropdown_content_inner {
+    background-color: #222 !important;
+  }
+  .topiclist {
+    background-color: #222;
+  }
+  .topiclist .topic {
+    background-color: #181818;
+  }
+  .topiclist .topic:hover {
+    background-color: #333;
+  }
+  .forums_tabbar li {
+    background-color: #222;
+    color: #757575;
+    border-color: #4d4d4d;
+  }
+  .forums_tabbar li a {
+    background-color: #222;
+  }
+  .forums_tabbar li.is_selected {
+    background-color: #424242;
+  }
+  .forums_layout {
+    background-color: #222;
+  }
+  .categories_selector label {
+    background-color: #222;
+  }
+  .forums_nav {
+    background-color: #222;
+    border-color: #4d4d4d;
+  }
+  .forums_nav_deal_alerts > a::after {
+    background-color: #222;
+  }
+  .ellipses_menu .ellipses_menu_button,
+  .ellipses_menu .ellipses_menu_content_inner {
+    background-color: #333;
+  }
+  /* POST */
+  .primary_content {
+    background-color: #222;
+    color: #757575;
+  }
+  .row {
+    background-color: #222 !important;
+    color: #757575;
+    border: #2d2d2d;
+  }
+  .row .sticky {
+    background-color: #333 !important;
+  }
+  .topictitle a:not(.topic_title_link) {
+    background-color: #333;
+    border-color: #4d4d4d;
+  }
+  .thread_info .post_voting {
+    background-color: #333;
+    color: #757575;
+    border-color: #4d4d4d;
+  }
+  .actionbar .post_voting {
+    color: #757575;
+    border-color: #4d4d4d;
+  }
+  .pagination_pages li a {
+    background-color: #333 !important;
+    border-color: #4d4d4d !important;
+  }
+  .pagination_pages a {
+    background-color: #333;
+    border-color: #4d4d4d;
+  }
+  /* FOOTER */
+  footer,
+  #partition_forums {
+    background-color: #222 !important;
+  }
+  .dropdown-container div,
+  footer div {
+    background-color: #222;
+    color: #757575;
+  }
+  /* THREAD */
+  .retailer_badge {
+    background-color: #333;
+  }
+  .thread_navigation_secondary a {
+    background-color: #333;
+  }
+  .thread_topmatter {
+    background-color: #333;
+  }
+  .thread_header,
+  .thread_header_buttons a,
+  .post_offer {
+    background-color: #222;
+  }
+  #rfd_topic_summary #topic_summary_header {
+    background-color: #323232 !important;
+  }
+  #rfd_topic_summary .post_body {
+    background-color: #222 !important;
+  }
+  .thread_post blockquote {
+    background-color: #323232;
+  }
+  .thread_posts {
+    background-color: #222;
+  }
+  .thread_replies_header,
+  .post_reply_button {
+    background-color: #810;
+  }
+}
