@@ -5,7 +5,7 @@
 @description    Make RFD Forums easier to see
 @homepageURL    https://github.com/ytqxyd/rfd-themes
 @preprocessor   stylus
-@version        0.1.1
+@version        0.1.3
 @author         ytqxyd
 @license        GPL-3.0
 
@@ -58,10 +58,17 @@
   select {
     background-color: #222 !important;
   }
+  .thread_image,
+  .author_avatar,
+  .list_item_image {
+    filter: brightness(69%);
+  }
+  use {
+    fill: #757575 !important;
+  }
   .dropdown,
   .dropdown_item,
   .categories_selector,
-  .thread_vote_count,
   .site_pagination_forums div,
   .site_pagination_forums a {
     background-color: #222 !important;
@@ -88,13 +95,20 @@
   .forum_tools_container .forum_tools {
     background-color: #222;
   }
+  .search_field {
+    background-color: #222;
+  }
   /* SIDE */
-  .list_threads .list_item {
-    background-color: #222 !important;
-    color: #757575;
-    border-color: #4d4d4d;
+  .list_item {
+    background-color: #222;
+  }
+  .section_sidebar {
+    background-color: #333 !important;
   }
   /* HEADER */
+  #site_extra_menubar {
+    background-color: #222;
+  }
   #site_header,
   #site_headerbar,
   .submenu_section {
@@ -103,8 +117,22 @@
   .site_userbox_dropdown * {
     background-color: #323232;
   }
+  .filter_dropdown button,
+  .filter_dropdown_content {
+    background-color: #222;
+  }
+  .change_view_dropdown button,
+  .change_view_dropdown_content_inner {
+    background-color: #222 !important;
+  }
   .topiclist {
     background-color: #222;
+  }
+  .topiclist .topic {
+    background-color: #181818;
+  }
+  .topiclist .topic:hover {
+    background-color: #333;
   }
   .forums_tabbar li {
     background-color: #222;
@@ -130,6 +158,10 @@
   .forums_nav_deal_alerts > a::after {
     background-color: #222;
   }
+  .ellipses_menu .ellipses_menu_button,
+  .ellipses_menu .ellipses_menu_content_inner {
+    background-color: #333;
+  }
   /* POST */
   .primary_content {
     background-color: #222;
@@ -147,7 +179,12 @@
     background-color: #333;
     border-color: #4d4d4d;
   }
-  .post_voting {
+  .thread_info .post_voting {
+    background-color: #333;
+    color: #757575;
+    border-color: #4d4d4d;
+  }
+  .actionbar .post_voting {
     color: #757575;
     border-color: #4d4d4d;
   }
